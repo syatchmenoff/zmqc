@@ -224,9 +224,9 @@ def get_sockopts(sock_opts):
     """
 
     option_coerce = {
-        int: set(zmq.core.constants.int_sockopts).union(
-            zmq.core.constants.int64_sockopts),
-        str: set(zmq.core.constants.bytes_sockopts)
+        int: set(zmq.sugar.int_sockopts).union(
+            zmq.sugar.int64_sockopts),
+        str: set(zmq.sugar.bytes_sockopts)
     }
 
     options = []
